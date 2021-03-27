@@ -44,18 +44,16 @@ def __get_upc_data(upc):
 def get_product_data(upc):
     return __get_prices(upc) + '|' + __get_upc_data(upc)
 
-sample_upc = {
-    'cape_cod':'020685000294',
-    'coke':'049000050103',
-    'lays_sconion':'028400310444',
-    'veggie_broth':'051000198792',
-    'sabra_rrp_hum':'040822017503',
-    'aw_rootbeer':'078000053463',
-    'baba_hum':'17215927611',
-    'liquid_death':'860000023924',
-    'kind_bars':'602652186196',
-    'big_reeses':'034000666621',
-    'pasta':'072036725608'
-}
-
-print(get_product_data(sample_upc['pasta']))
+# sample_upc = {
+#     'cape_cod':'020685000294',
+#     'coke':'049000050103',
+#     'lays_sconion':'028400310444',
+#     'veggie_broth':'051000198792',
+#     'sabra_rrp_hum':'040822017503',
+#     'aw_rootbeer':'078000053463',
+#     'baba_hum':'17215927611',
+#     'liquid_death':'860000023924',
+#     'kind_bars':'602652186196',
+#     'big_reeses':'034000666621',
+#     'pasta':'072036725608'
+# }
