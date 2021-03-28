@@ -8,7 +8,7 @@ import { BarCodeScanner } from 'expo-barcode-scanner';
 
 const navigation = createStackNavigator();
 const Stack = createStackNavigator();
-const queryStringPreamble = 'http://142.93.125.94:5000/'
+const queryStringPreamble = 'http://142.93.125.94:5000/q/'
 const styles = StyleSheet.create({
   homeStyle: {
     flex: 1,
@@ -47,15 +47,26 @@ function HomeScreen( {navigation} ){
     })();
   }, []);
 
-  const handleBarCodeScanned = ({type, data}) => {
+  async function handleBarCodeScanned({type, data}) {
     setScanned(true);
     var upc = data as String;
-    var queryString = queryStringPreamble;
-    alert(`Bar code url string: ${queryString}`);
+    var queryString = queryStringPreamble + upc;
+    console.log(queryString)
+    //alert(`Bar code url string: ${queryString}`);
     //alert(`Bar code type ${type} and data ${upc}`);
     //Do query.
-    var queryResult = fetch(queryString);
-    console.log(queryResult);
+    var queryResult = null
+
+    alert('got code')
+    
+    await fetch(queryString).then(response =>
+      response.json().then(data => {
+        console.log('data received')
+        alert('data received')
+        queryResult = data;
+        navigation.navigate('Details', {data})
+      })
+    );
   };
 
   if (hasPermission === null) {
@@ -72,12 +83,15 @@ function HomeScreen( {navigation} ){
           onBarCodeScanned={scanned ? undefined : handleBarCodeScanned}
           style={StyleSheet.absoluteFillObject}
         />
-      {scanned && <Button title={'Go to results'} onPress={() => navigation.navigate('Details')}/>}
+      {/* {scanned && <Button title={'Go to results'} onPress={() => navigation.navigate('Details')}/>} */}
     </View>
   );
 };
 
-function DetailsScreen({navigation}) {
+function DetailsScreen({route, navigation}) {
+  const {data} = route.params;
+  console.log(data);
+
   return(
     <View style={styles.dataStyle}>
       <Text>Details Screen</Text>
@@ -86,16 +100,14 @@ function DetailsScreen({navigation}) {
         onPress={() => navigation.navigate('Home')}
       />
       <SectionList sections={[
-        {title: 'ht', data: ['3.79']},
-        {title: 'walmart', data: ['2.98']},
-        {title: 'amazon-fresh', data: ['3.00']},
-        {title: 'stop-share', data: ['3.00']},
-        {title: 'bj', data: ['Price not found']},
-        {title: 'heb', data: ['Price not found']},
-        {title: 'class', data: ['UPCA']},
-        {title: 'code', data: ['020685000294']},
-        {title: 'company', data: ['Cape Cod']},
-        {title: 'description', data: ['Cape cod Original 40% reduced fat kettle cooked potato chips']},
+        {title: 'Brand', data: [data.company]},
+        {title: 'Item', data: [data.description]},
+        {title: 'Harris Teeter', data: [data.ht]},
+        {title: 'Walmart', data: [data.walmart]},
+        {title: 'Amazon Fresh', data: [data.amazonfresh]},
+        {title: 'Stop and Shop', data: [data.stopshop]},
+        {title: 'BJ\'s', data: [data.bj]},
+        {title: 'H.E. Butt Grocery', data: [data.heb]},
       ]}
         renderItem={({item}) => <Text style={styles.item}>{item}</Text>}
         renderSectionHeader={({section}) => <Text style={styles.sectionHeader}>{section.title}</Text>}
