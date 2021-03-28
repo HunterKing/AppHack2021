@@ -1,21 +1,54 @@
-import React, { useState, useEffect } from 'react';
-import { Text, View, StyleSheet, Button } from 'react-native';
+import * as React from 'react';
+// import  {useState, useEffect} from 'react';
+import { SectionList, StyleSheet, View, Text, Button } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 import { BarCodeScanner } from 'expo-barcode-scanner';
 
-export default function App() {
-  const [hasPermission, setHasPermission] = useState(null);
-  const [scanned, setScanned] = useState(false);
+const navigation = createStackNavigator();
+const Stack = createStackNavigator();
+const styles = StyleSheet.create({
+  homeStyle: {
+    flex: 1,
+    alignItems: 'center',
+  },
+  dataStyle: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+  sectionHeader: {
+    paddingTop: 2,
+    paddingLeft: 10,
+    paddingRight: 10,
+    paddingBottom: 2,
+    fontSize: 14,
+    fontWeight: 'bold',
+    backgroundColor: 'rgba(247,247,247,1.0)',
+  },
+  item: {
+    padding: 10,
+    fontSize: 18,
+    height: 44,
+  }
+});
 
-  useEffect(() => {
+
+function HomeScreen( {navigation} ){
+  const [hasPermission, sethasPermission] = React.useState(null);
+  const [scanned, setScanned] = React.useState(false);
+
+  React.useEffect(() => {
     (async () => {
       const { status } = await BarCodeScanner.requestPermissionsAsync();
-      setHasPermission(status === 'granted');
+      sethasPermission(status === 'granted');
     })();
   }, []);
 
-  const handleBarCodeScanned = ({ type, data }) => {
+  const handleBarCodeScanned = ({type, data}) => {
     setScanned(true);
-    alert(`Bar code with type ${type} and data ${data} has been scanned!`);
+    var upc = data as String;
+    alert(`Bar code type ${type} and data ${upc}`);
   };
 
   if (hasPermission === null) {
@@ -26,21 +59,59 @@ export default function App() {
   }
 
   return (
-    <View style={styles.container}>
-      <BarCodeScanner
-        onBarCodeScanned={scanned ? undefined : handleBarCodeScanned}
-        style={StyleSheet.absoluteFillObject}
-      />
-      {scanned && <Button title={'Tap to Scan Again'} onPress={() => setScanned(false)} />}
+    <View style={styles.homeStyle}>
+      <Text>Home Screen</Text>
+        <BarCodeScanner 
+          onBarCodeScanned={scanned ? undefined : handleBarCodeScanned}
+          style={StyleSheet.absoluteFillObject}
+        />
+      {scanned && <Button title={'Go to results'} onPress={() => navigation.navigate('Details')}/>}
     </View>
+  );
+};
+
+function DetailsScreen({navigation}) {
+  return(
+    <View style={styles.dataStyle}>
+      <Text>Details Screen</Text>
+      <Button
+        title="Go to Home"
+        onPress={() => navigation.navigate('Home')}
+      />
+      <SectionList sections={[
+        {title: 'ht', data: ['3.79']},
+        {title: 'walmart', data: ['2.98']},
+        {title: 'amazon-fresh', data: ['3.00']},
+        {title: 'stop-share', data: ['3.00']},
+        {title: 'bj', data: ['Price not found']},
+        {title: 'heb', data: ['Price not found']},
+        {title: 'class', data: ['UPCA']},
+        {title: 'code', data: ['020685000294']},
+        {title: 'company', data: ['Cape Cod']},
+        {title: 'description', data: ['Cape cod Original 40% reduced fat kettle cooked potato chips']},
+      ]}
+        renderItem={({item}) => <Text style={styles.item}>{item}</Text>}
+        renderSectionHeader={({section}) => <Text style={styles.sectionHeader}>{section.title}</Text>}
+        keyExtractor={(item, index)=>index}
+      />
+    </View>
+  );
+};
+/*
+{"ht": 3.79, "walmart": 2.98, "amazon-fresh": 3.0, "stop-shop": 3.0, "bj": "Price not found", "heb": "Price not found"}
+|{"class": "UPCA", "code": "020685000294", "company": "Cape Cod", "description": "Cape cod Original 40% redced fat kettle cooked potato chips", uced fat kettle cooked potato chips", "image_url": "https://images-na.ssl-images-amazon.com/images/I/81VdkBdj1XL._SL1500_.jpg", "size": "", "status": "active"}
+*/
+function App() {
+
+  return (
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Screen name="Details" component={DetailsScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+
+export default App;
