@@ -11,7 +11,11 @@ def query(upc):
         }
 
     response = requests.request("GET", url, headers=headers).json()
+
     __clean_desc(response)
+
+    print('upc query done')
+
     return response
 
 def __clean_desc(json_dict):

@@ -18,55 +18,84 @@ url_addendum = {
     'bj':'/q'
 }
 
-def get_price(vendor, upc):
-    html_doc = __sel_search(vendor, upc)
+class searcher():
+    def __init__(self):
+        self.current_driver = None
 
-    if html_doc == False:
-        return 'Price not found'
+    def get_price(self, vendor, upc):
+        html_doc = self.__sel_search(vendor, upc)
 
-    soup = BeautifulSoup(html_doc, 'html.parser')
+        if html_doc == False:
+            return 'Price not found'
 
-    soup_find = importlib.import_module('queries.%s' % vendor+'.soup_find')
+        soup = BeautifulSoup(html_doc, 'html.parser')
 
-    dollar_amount = soup_find.find(soup)
+        soup_find = importlib.import_module('queries.%s' % vendor+'.soup_find')
 
-    return float(dollar_amount)
+        dollar_amount = soup_find.find(soup)
 
+        if dollar_amount != 'Price not found':
+            dollar_amount = '$'+dollar_amount
+        return dollar_amount
 
+    def __create_driver(self):
+        options = webdriver.ChromeOptions()
+        options.add_argument("--headless")
+        # options.add_argument("--disable-extensions")
+        options.add_argument("--disable-dev-shm-usage")
+        options.add_argument("--no-sandbox")
 
-def __sel_search(vendor, upc):
-    #print('open for ', vendor)
-    firefox_options = webdriver.FirefoxOptions()
-    firefox_options.set_headless()
+        options.add_argument('user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36')
 
-    driver = webdriver.Firefox(executable_path='/root/myproject/py-upc-query/queries/geckodriver', firefox_options = firefox_options)
-    url = vendor_to_url[vendor] + upc
-    if vendor in url_addendum:
-        url = url + url_addendum[vendor]
-    driver.get(url)
+        self.current_driver = webdriver.Chrome(executable_path='/root/myproject/py-upc-query/queries/chromedriver', chrome_options=options)
 
-    search_chars = {}
+    def __sel_search(self, vendor, upc):
+        #print('open for ', vendor)
+        #firefox_options = webdriver.FirefoxOptions()
+        #firefox_options.set_headless()
 
-    with open('/root/myproject/py-upc-query/queries/'+vendor+'/search_char.json') as f:
-        search_chars = json.load(f)
+        #driver = webdriver.Firefox(executable_path='/root/myproject/py-upc-query/queries/geckodriver', firefox_options = firefox_options)
 
-    found_element = False
-    html_doc = None
-    
-    while found_element == False:
-        page = driver.page_source
-        if search_chars['not_found'] in page:
-            found_element = True
-            #print('no products')
-        elif search_chars['found'] in page:
-            found_element = True
-            html_doc = driver.page_source
-            #print('found')
+        if not self.current_driver:
+            self.__create_driver()
 
-    #print('close for ', vendor)
-    driver.close()
+        driver = self.current_driver
 
-    if html_doc != None:
-        return html_doc
-    else:
-        return False
+        url = vendor_to_url[vendor] + upc
+        if vendor in url_addendum:
+            url = url + url_addendum[vendor]
+        driver.get(url)
+
+        search_chars = {}
+
+        with open('/root/myproject/py-upc-query/queries/'+vendor+'/search_char.json') as f:
+            search_chars = json.load(f)
+
+        found_element = False
+        html_doc = None
+        
+        counter = 0
+        while found_element == False:
+            counter += 1
+            print(vendor, counter)
+            if counter == 150:
+                print(search_chars['not_found'])
+                print(search_chars['found'])
+                print(driver.page_source)
+                break
+            page = driver.page_source
+            if search_chars['not_found'] in page:
+                found_element = True
+                #print('no products')
+            elif search_chars['found'] in page:
+                found_element = True
+                html_doc = driver.page_source
+                #print('found')
+
+        #print('close for ', vendor)
+        driver.close()
+
+        if html_doc != None:
+            return html_doc
+        else:
+            return False
