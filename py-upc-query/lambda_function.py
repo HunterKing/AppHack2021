@@ -1,5 +1,9 @@
 import main
+import sys
 
-def lambda_handler(event, context):
-    upc = event['upc']
-    return main.get_product_data(upc)
+def run(upc):
+    mystring = main.get_product_data(upc)
+    print(mystring)
+    return mystring
+
+run(sys.argv[1])
