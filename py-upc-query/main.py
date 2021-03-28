@@ -3,7 +3,7 @@ import queries.upc.query_upc as query_upc
 import concurrent.futures
 import json
 
-vendors = ['ht', 'walmart', 'amazon-fresh', 'stop-shop', 'bj', 'heb']
+vendors = ['ht', 'walmart', 'amazonfresh', 'stopshop', 'bj', 'heb']
 
 def __price_thread(vendor, upc):
     return {'price-float':search_by_upc.get_price(vendor, upc), 'vendor':vendor}
@@ -24,9 +24,9 @@ def __get_prices(upc):
     for return_val in returns:
         to_return_dict[return_val['vendor']] = return_val['price-float']
     
-    to_return_json = json.dumps(to_return_dict)
+    #to_return_json = json.dumps(to_return_dict)
 
-    return to_return_json
+    return to_return_dict
 
 #in: upc = string
 #out: json string = {
@@ -39,10 +39,29 @@ def __get_prices(upc):
 #   'status': String        #unknown - is the code currently used?
 # }
 def __get_upc_data(upc):
-    return json.dumps(query_upc.query(upc))
+    return query_upc.query(upc)
 
 def get_product_data(upc):
-    return __get_prices(upc) + '|' + __get_upc_data(upc)
+
+    product_data = __get_prices(upc)
+    upc_data = __get_upc_data(upc)
+
+    to_return_dict = {
+        'amazonfresh':product_data['amazonfresh'],
+        'bj':product_data['bj'],
+        'company': upc_data['company'],
+        'description': upc_data['description'],
+        'heb': product_data['heb'],
+        'ht': product_data['ht'],
+        'image_url': upc_data['image_url'],
+        'stopshop': product_data['stopshop'],
+        'walmart': product_data['walmart']
+    }
+
+    to_return_json = json.dumps(to_return_dict)
+    print(to_return_json)
+
+    return to_return_json
 
 # sample_upc = {
 #     'cape_cod':'020685000294',

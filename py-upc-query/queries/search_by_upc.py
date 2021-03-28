@@ -7,14 +7,14 @@ import importlib
 vendor_to_url = {
     'ht':'https://www.harristeeter.com/search?query=',
     'walmart':'https://www.walmart.com/search/?query=',
-    'amazon-fresh':'https://www.amazon.com/s?k=',
-    'stop-shop':'https://stopandshop.com/product-search/',
+    'amazonfresh':'https://www.amazon.com/s?k=',
+    'stopshop':'https://stopandshop.com/product-search/',
     'bj':'https://www.bjs.com/search/',
     'heb':'https://www.heb.com/search/?q='
 }
 
 url_addendum = {
-    'amazon-fresh':'&i=amazonfresh',
+    'amazonfresh':'&i=amazonfresh',
     'bj':'/q'
 }
 
