@@ -4,6 +4,8 @@ from selenium.webdriver.common.keys import Keys
 import json
 import importlib
 
+from selenium_firefox.firefox import Firefox as ffdriver
+
 vendor_to_url = {
     'ht':'https://www.harristeeter.com/search?query=',
     'walmart':'https://www.walmart.com/search/?query=',
@@ -39,7 +41,8 @@ def __sel_search(vendor, upc):
     firefox_options = webdriver.FirefoxOptions()
     firefox_options.set_headless()
 
-    driver = webdriver.Firefox(executable_path='AppHack2021/py-upc-query/queries/geckodriver', firefox_options = firefox_options)
+    #driver = ffdriver(executable_path='queries/geckodriver', firefox_options = firefox_options)
+    driver = ffdriver()
     url = vendor_to_url[vendor] + upc
     if vendor in url_addendum:
         url = url + url_addendum[vendor]
@@ -47,7 +50,7 @@ def __sel_search(vendor, upc):
 
     search_chars = {}
 
-    with open('AppHack2021/py-upc-query/queries/'+vendor+'/search_char.json') as f:
+    with open('queries/'+vendor+'/search_char.json') as f:
         search_chars = json.load(f)
 
     found_element = False
