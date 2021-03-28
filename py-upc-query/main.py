@@ -5,61 +5,50 @@ import json
 
 vendors = ['ht', 'walmart', 'amazonfresh', 'stopshop', 'bj', 'heb']
 
-def __price_thread(vendor, upc):
-    return {'price-float':search_by_upc.get_price(vendor, upc), 'vendor':vendor}
+def __price_thread(searcher, vendor, upc):
+    to_return = {'price':searcher.get_price(vendor, upc), 'vendor':vendor}
+    print('finished '+vendor)
+    return to_return
 
-# in: upc = string
-# out: json string {string vendor = float price}
 def __get_prices(upc):
     threads = []
     returns = []
 
+    searcher = search_by_upc.searcher()
+
     with concurrent.futures.ThreadPoolExecutor(max_workers=len(vendors)) as executor:
         for vendor in vendors:
-            threads.append(executor.submit(__price_thread, vendor, upc))
+            threads.append(executor.submit(__price_thread, searcher, vendor, upc))
+            print('ran '+vendor)
+        print('all vendor scans running')
+        threads.append(executor.submit(__get_upc_data, upc))
+
+        print('upc running')
+
     for thread in threads:
         returns.append(thread.result())
     
+    print('all threads returned')
+
     to_return_dict = {}
     for return_val in returns:
-        to_return_dict[return_val['vendor']] = return_val['price-float']
-    
-    #to_return_json = json.dumps(to_return_dict)
+        if 'price' in return_val:
+            to_return_dict[return_val['vendor']] = return_val['price']
+        else:
+            to_return_dict['company'] = return_val['company']
+            to_return_dict['description'] = return_val['description']
+            to_return_dict['image_url'] = return_val['image_url']
 
     return to_return_dict
 
-#in: upc = string
-#out: json string = {
-#   'class': String,        #class of barcode
-#   'code': String,         #UPC code
-#   'company': String,      #manufacturer
-#   'description': String   #item name, 
-#   'image_url': String     #url of generic image for item, 
-#   'size': String          #unknown - size of item?, 
-#   'status': String        #unknown - is the code currently used?
-# }
 def __get_upc_data(upc):
     return query_upc.query(upc)
 
 def get_product_data(upc):
 
-    product_data = __get_prices(upc)
-    upc_data = __get_upc_data(upc)
-
-    to_return_dict = {
-        'amazonfresh':product_data['amazonfresh'],
-        'bj':product_data['bj'],
-        'company': upc_data['company'],
-        'description': upc_data['description'],
-        'heb': product_data['heb'],
-        'ht': product_data['ht'],
-        'image_url': upc_data['image_url'],
-        'stopshop': product_data['stopshop'],
-        'walmart': product_data['walmart']
-    }
+    to_return_dict = __get_prices(upc)
 
     to_return_json = json.dumps(to_return_dict)
-    print(to_return_json)
 
     return to_return_json
 
