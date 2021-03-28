@@ -2,7 +2,7 @@ import * as React from 'react';
 import * as Axios from 'axios';
 // import  {useState, useEffect} from 'react';
 import { SectionList, StyleSheet, View, Text, Button } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
+import { NavigationContainer, StackActions, NavigationActions } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { BarCodeScanner } from 'expo-barcode-scanner';
 
@@ -47,7 +47,7 @@ function HomeScreen( {navigation} ){
     })();
   }, []);
 
-  async function handleBarCodeScanned({type, data}) {
+  function handleBarCodeScanned({data}) {
     setScanned(true);
     var upc = data as String;
     var queryString = queryStringPreamble + upc;
@@ -55,10 +55,11 @@ function HomeScreen( {navigation} ){
     //alert(`Bar code url string: ${queryString}`);
     //alert(`Bar code type ${type} and data ${upc}`);
     //Do query.
-    var queryResult = null
+    var queryResult = data
 
     alert('got code')
-    
+    getQuery(queryString)
+    async function getQuery(queryString) {
     await fetch(queryString).then(response =>
       response.json().then(data => {
         console.log('data received')
@@ -67,6 +68,7 @@ function HomeScreen( {navigation} ){
         navigation.navigate('Details', {data})
       })
     );
+    };
   };
 
   if (hasPermission === null) {
@@ -97,7 +99,7 @@ function DetailsScreen({route, navigation}) {
       <Text>Details Screen</Text>
       <Button
         title="Go to Home"
-        onPress={() => navigation.navigate('Home')}
+        onPress={() => navigation.push('Home')}
       />
       <SectionList sections={[
         {title: 'Brand', data: [data.company]},
@@ -107,7 +109,7 @@ function DetailsScreen({route, navigation}) {
         {title: 'Amazon Fresh', data: [data.amazonfresh]},
         {title: 'Stop and Shop', data: [data.stopshop]},
         {title: 'BJ\'s', data: [data.bj]},
-        {title: 'H.E. Butt Grocery', data: [data.heb]},
+        {title: 'H.E.B. Grocery', data: [data.heb]},
       ]}
         renderItem={({item}) => <Text style={styles.item}>{item}</Text>}
         renderSectionHeader={({section}) => <Text style={styles.sectionHeader}>{section.title}</Text>}
@@ -120,8 +122,8 @@ function DetailsScreen({route, navigation}) {
 {"ht": 3.79, "walmart": 2.98, "amazon-fresh": 3.0, "stop-shop": 3.0, "bj": "Price not found", "heb": "Price not found"}
 |{"class": "UPCA", "code": "020685000294", "company": "Cape Cod", "description": "Cape cod Original 40% redced fat kettle cooked potato chips", uced fat kettle cooked potato chips", "image_url": "https://images-na.ssl-images-amazon.com/images/I/81VdkBdj1XL._SL1500_.jpg", "size": "", "status": "active"}
 */
-function App() {
 
+function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">
