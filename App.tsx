@@ -92,7 +92,6 @@ function HomeScreen( {navigation} ){
 
 function DetailsScreen({route, navigation}) {
   const {data} = route.params;
-  console.log(data);
 
   return(
     <View style={styles.dataStyle}>
