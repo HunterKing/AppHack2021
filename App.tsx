@@ -1,4 +1,5 @@
 import * as React from 'react';
+import * as Axios from 'axios';
 // import  {useState, useEffect} from 'react';
 import { SectionList, StyleSheet, View, Text, Button } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
@@ -7,6 +8,7 @@ import { BarCodeScanner } from 'expo-barcode-scanner';
 
 const navigation = createStackNavigator();
 const Stack = createStackNavigator();
+const queryStringPreamble = 'http://142.93.125.94:5000/'
 const styles = StyleSheet.create({
   homeStyle: {
     flex: 1,
@@ -48,7 +50,12 @@ function HomeScreen( {navigation} ){
   const handleBarCodeScanned = ({type, data}) => {
     setScanned(true);
     var upc = data as String;
-    alert(`Bar code type ${type} and data ${upc}`);
+    var queryString = queryStringPreamble;
+    alert(`Bar code url string: ${queryString}`);
+    //alert(`Bar code type ${type} and data ${upc}`);
+    //Do query.
+    var queryResult = fetch(queryString);
+    console.log(queryResult);
   };
 
   if (hasPermission === null) {
