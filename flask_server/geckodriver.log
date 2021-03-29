@@ -1,0 +1,509 @@
+1616914818011	geckodriver	INFO	Listening on 127.0.0.1:58045
+1616914818021	geckodriver	INFO	Listening on 127.0.0.1:55307
+1616914818028	geckodriver	INFO	Listening on 127.0.0.1:48639
+1616914818030	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileDD0HuU"
+1616914818035	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilecfVvhs"
+1616914818036	geckodriver	INFO	Listening on 127.0.0.1:52359
+1616914818039	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileQokaJS"
+1616914818040	geckodriver	INFO	Listening on 127.0.0.1:57495
+1616914818049	geckodriver	INFO	Listening on 127.0.0.1:60291
+*** You are running in headless mode.
+*** You are running in headless mode.
+*** You are running in headless mode.
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libGL.so.1 missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libGL.so.1 missing
+[GFX1-]: glxtest: libEGL missing
+1616914819043	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileFMNMqj"
+1616914819047	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileG2EEOW"
+1616914819054	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileDRAUu1"
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libGL.so.1 missing
+[GFX1-]: glxtest: libEGL missing
+*** You are running in headless mode.
+*** You are running in headless mode.
+*** You are running in headless mode.
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libGL.so.1 missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libGL.so.1 missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libGL.so.1 missing
+[GFX1-]: glxtest: libEGL missing
+
+(/usr/lib/firefox/firefox:11541): GLib-GObject-CRITICAL **: 07:00:21.495: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:11565): GLib-GObject-CRITICAL **: 07:00:22.144: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:11584): GLib-GObject-CRITICAL **: 07:00:22.282: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:11600): GLib-GObject-CRITICAL **: 07:00:22.523: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:11619): GLib-GObject-CRITICAL **: 07:00:22.746: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:11644): GLib-GObject-CRITICAL **: 07:00:22.995: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:11765): GLib-GObject-CRITICAL **: 07:00:24.731: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:11817): GLib-GObject-CRITICAL **: 07:00:25.196: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:11839): GLib-GObject-CRITICAL **: 07:00:25.370: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:11855): GLib-GObject-CRITICAL **: 07:00:25.649: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:11881): GLib-GObject-CRITICAL **: 07:00:25.843: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:11903): GLib-GObject-CRITICAL **: 07:00:26.091: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:12015): GLib-GObject-CRITICAL **: 07:00:30.023: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:12034): GLib-GObject-CRITICAL **: 07:00:30.861: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:12033): GLib-GObject-CRITICAL **: 07:00:31.095: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+1616914832178	Marionette	INFO	Listening on port 37671
+1616914832522	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616914832672	Marionette	INFO	Listening on port 39131
+1616914832848	Marionette	INFO	Listening on port 46287
+1616914832963	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616914833192	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:12099): GLib-GObject-CRITICAL **: 07:00:34.122: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:12102): GLib-GObject-CRITICAL **: 07:00:34.173: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:12122): GLib-GObject-CRITICAL **: 07:00:34.532: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+1616914835250	Marionette	INFO	Listening on port 34713
+1616914835448	Marionette	INFO	Listening on port 34935
+1616914835578	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616914835794	Marionette	INFO	Listening on port 42069
+1616914836190	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616914836194	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616914837038	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://www.amazon.com/s?k=020685000294&i=amazonfresh line 6 > injectedScript, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.amazon.com/s?k=020685000294&i=amazonfresh line 6 > injectedScript, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.amazon.com/s?k=020685000294&i=amazonfresh line 6 > injectedScript, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.amazon.com/s?k=020685000294&i=amazonfresh line 6 > injectedScript, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1616914841099	Marionette	INFO	Stopped listening on port 46287
+1616914845881	Marionette	INFO	Stopped listening on port 34713
+JavaScript warning: https://www.bjs.com/staticweb/1f5e6713d54ti207634e0c078ae0ff94a, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.bjs.com/staticweb/1f5e6713d54ti207634e0c078ae0ff94a, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript error: https://www.harristeeter.com/search?query=020685000294 line 3146 > injectedScript, line 1: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.harristeeter.com/search?query=020685000294 line 3146 > injectedScript, line 4: ReferenceError: angular is not defined
+JavaScript error: https://www.harristeeter.com/search?query=020685000294 line 3146 > injectedScript, line 1: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+1616914848137	Marionette	INFO	Stopped listening on port 37671
+JavaScript error: https://www.astutebot.com/components/Launchers/Messenger/v1.0.0.js, line 547: TypeError: settings.runtime.messenger is null
+JavaScript warning: https://www.heb.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=387809628, line 1: unreachable code after return statement
+JavaScript warning: https://www.heb.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=387809628, line 1: unreachable code after return statement
+JavaScript warning: https://www.heb.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=387809628 line 1 > eval, line 1: unreachable code after return statement
+1616914850250	Marionette	INFO	Stopped listening on port 39131
+JavaScript error: chrome://global/content/elements/browser-custom-element.js, line 1709: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+1616914851368	Marionette	INFO	Stopped listening on port 42069
+JavaScript warning: https://beacon.riskified.com/?shop=www.bjs.com&sid=ed2eb7a4-1163-45e6-8832-39f4a7c4799a, line 7: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://beacon.riskified.com/?shop=www.bjs.com&sid=ed2eb7a4-1163-45e6-8832-39f4a7c4799a, line 7: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://beacon.riskified.com/?shop=www.bjs.com&sid=ed2eb7a4-1163-45e6-8832-39f4a7c4799a, line 7: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://beacon.riskified.com/?shop=www.bjs.com&sid=ed2eb7a4-1163-45e6-8832-39f4a7c4799a, line 7: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5D000D,name=PHttpChannel::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x230032,name=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1616914855402	Marionette	INFO	Stopped listening on port 34935
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-PN7ML7L, line 8367: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-N4ZR4L2&l=dataLayer, line 4594: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: , line 0: uncaught exception: undefined
+1616915175687	geckodriver	INFO	Listening on 127.0.0.1:42377
+1616915175693	geckodriver	INFO	Listening on 127.0.0.1:34851
+1616915175695	geckodriver	INFO	Listening on 127.0.0.1:50623
+1616915175701	geckodriver	INFO	Listening on 127.0.0.1:42321
+1616915175705	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile5TUdAC"
+1616915175707	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileOhKUHC"
+1616915175709	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileT4VeHf"
+1616915175715	geckodriver	INFO	Listening on 127.0.0.1:38191
+1616915175718	geckodriver	INFO	Listening on 127.0.0.1:50425
+*** You are running in headless mode.
+*** You are running in headless mode.
+*** You are running in headless mode.
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libGL.so.1 missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libGL.so.1 missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libGL.so.1 missing
+[GFX1-]: glxtest: libEGL missing
+1616915176694	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilemxy5za"
+1616915176727	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilebN44Dl"
+1616915176727	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiletc8DCQ"
+*** You are running in headless mode.
+*** You are running in headless mode.
+*** You are running in headless mode.
+1616915177591	geckodriver	INFO	Listening on 127.0.0.1:40329
+1616915177601	geckodriver	INFO	Listening on 127.0.0.1:36027
+1616915177631	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileJ5ULEU"
+1616915177636	geckodriver	INFO	Listening on 127.0.0.1:57075
+1616915177662	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileFM7vAO"
+1616915177664	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilerrH1sy"
+1616915177672	geckodriver	INFO	Listening on 127.0.0.1:59481
+1616915177674	geckodriver	INFO	Listening on 127.0.0.1:49513
+1616915177711	geckodriver	INFO	Listening on 127.0.0.1:47589
+*** You are running in headless mode.
+*** You are running in headless mode.
+*** You are running in headless mode.
+1616915178671	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileNgthsP"
+1616915178680	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileMeXTId"
+1616915178713	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileAzB1rD"
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libGL.so.1 missing
+[GFX1-]: glxtest: libEGL missing
+*** You are running in headless mode.
+*** You are running in headless mode.
+*** You are running in headless mode.
+
+(/usr/lib/firefox/firefox:12854): GLib-GObject-CRITICAL **: 07:06:19.148: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libGL.so.1 missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libGL.so.1 missing
+[GFX1-]: glxtest: libEGL missing
+
+(/usr/lib/firefox/firefox:12897): GLib-GObject-CRITICAL **: 07:06:19.911: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:12953): GLib-GObject-CRITICAL **: 07:06:20.263: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libGL.so.1 missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libGL.so.1 missing
+[GFX1-]: glxtest: libEGL missing
+
+(/usr/lib/firefox/firefox:13003): GLib-GObject-CRITICAL **: 07:06:20.970: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libGL.so.1 missing
+[GFX1-]: glxtest: libEGL missing
+
+(/usr/lib/firefox/firefox:13023): GLib-GObject-CRITICAL **: 07:06:21.312: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:13088): GLib-GObject-CRITICAL **: 07:06:22.354: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libGL.so.1 missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libGL.so.1 missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libEGL missing
+[GFX1-]: glxtest: libGL.so.1 missing
+[GFX1-]: glxtest: libEGL missing
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:13184): GLib-GObject-CRITICAL **: 07:06:24.055: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:13237): GLib-GObject-CRITICAL **: 07:06:24.953: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:13255): GLib-GObject-CRITICAL **: 07:06:25.315: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:13304): GLib-GObject-CRITICAL **: 07:06:25.884: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:13320): GLib-GObject-CRITICAL **: 07:06:26.295: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:13352): GLib-GObject-CRITICAL **: 07:06:27.056: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:13370): GLib-GObject-CRITICAL **: 07:06:27.282: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:13411): GLib-GObject-CRITICAL **: 07:06:27.529: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:13414): GLib-GObject-CRITICAL **: 07:06:27.563: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:13484): GLib-GObject-CRITICAL **: 07:06:28.816: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:13491): GLib-GObject-CRITICAL **: 07:06:28.897: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:13505): GLib-GObject-CRITICAL **: 07:06:29.064: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:13542): GLib-GObject-CRITICAL **: 07:06:29.433: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:13562): GLib-GObject-CRITICAL **: 07:06:29.657: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:13570): GLib-GObject-CRITICAL **: 07:06:29.761: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:13672): GLib-GObject-CRITICAL **: 07:06:31.492: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+
+(/usr/lib/firefox/firefox:13698): GLib-GObject-CRITICAL **: 07:06:31.768: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:13692): GLib-GObject-CRITICAL **: 07:06:31.845: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+console.error: Region.jsm: "Error fetching region" (new AbortError("The operation was aborted. ", (void 0), 770))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+
+(/usr/lib/firefox/firefox:13768): GLib-GObject-CRITICAL **: 07:06:33.445: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.error: Region.jsm: "Error fetching region" (new AbortError("The operation was aborted. ", (void 0), 770))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 772))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 419))
+
+(/usr/lib/firefox/firefox:13836): GLib-GObject-CRITICAL **: 07:06:35.114: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+console.error: Region.jsm: "Error fetching region" (new AbortError("The operation was aborted. ", (void 0), 770))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+console.error: Region.jsm: "Error fetching region" (new AbortError("The operation was aborted. ", (void 0), 770))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1616915196324	Marionette	INFO	Listening on port 45307
+1616915196909	Marionette	INFO	Listening on port 35071
+1616915197021	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616915197574	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:13936): GLib-GObject-CRITICAL **: 07:06:37.766: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+console.error: Region.jsm: "Error fetching region" (new AbortError("The operation was aborted. ", (void 0), 770))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+console.error: Region.jsm: "Error fetching region" (new AbortError("The operation was aborted. ", (void 0), 770))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+console.error: Region.jsm: "Error fetching region" (new AbortError("The operation was aborted. ", (void 0), 770))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 419))
+1616915199964	Marionette	INFO	Listening on port 36715
+1616915200817	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616915202538	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+
+(/usr/lib/firefox/firefox:14002): GLib-GObject-CRITICAL **: 07:06:42.666: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:14062): GLib-GObject-CRITICAL **: 07:06:44.169: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:14076): GLib-GObject-CRITICAL **: 07:06:44.538: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+1616915205607	Marionette	INFO	Listening on port 43875
+1616915206461	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616915207294	Marionette	INFO	Listening on port 38817
+1616915207306	Marionette	INFO	Listening on port 36073
+
+(/usr/lib/firefox/firefox:14131): GLib-GObject-CRITICAL **: 07:06:47.415: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:14127): GLib-GObject-CRITICAL **: 07:06:47.480: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+JavaScript warning: https://www.amazon.com/s?k=020685000294&i=amazonfresh line 6 > injectedScript, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.amazon.com/s?k=020685000294&i=amazonfresh line 6 > injectedScript, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.amazon.com/s?k=020685000294&i=amazonfresh line 6 > injectedScript, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.amazon.com/s?k=020685000294&i=amazonfresh line 6 > injectedScript, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1616915208170	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616915208221	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:14140): GLib-GObject-CRITICAL **: 07:06:48.314: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+1616915209257	Marionette	INFO	Listening on port 41081
+1616915209695	Marionette	INFO	Listening on port 42771
+1616915209944	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616915210117	Marionette	INFO	Listening on port 38755
+1616915210366	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616915210441	Marionette	INFO	Stopped listening on port 45307
+
+(/usr/lib/firefox/firefox:14200): GLib-GObject-CRITICAL **: 07:06:50.590: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:14211): GLib-GObject-CRITICAL **: 07:06:50.613: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+
+(/usr/lib/firefox/firefox:14217): GLib-GObject-CRITICAL **: 07:06:51.087: g_object_set: assertion 'G_IS_OBJECT (object)' failed
+1616915211107	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616915212347	Marionette	INFO	Listening on port 44693
+1616915212683	Marionette	INFO	Listening on port 34001
+1616915213242	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616915213408	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616915213629	Marionette	INFO	Listening on port 46737
+1616915214470	Marionette	WARN	TLS certificate errors will be ignored for this session
+1616915215553	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://i5.wal.co/dfw/63fd9f59-4115/43283534-692b-4a07-81b4-78c82e8936a8/v1/desktop.bundle.5b7360d1542f23779836.js-1a3e69d6237c00026f0acabae8a81a4ebdf75334-br.js, line 1: TypeError: n is null
+JavaScript warning: https://www.amazon.com/s?k=020685000294&i=amazonfresh line 6 > injectedScript, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.amazon.com/s?k=020685000294&i=amazonfresh line 6 > injectedScript, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.amazon.com/s?k=020685000294&i=amazonfresh line 6 > injectedScript, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.amazon.com/s?k=020685000294&i=amazonfresh line 6 > injectedScript, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1616915223116	Marionette	INFO	Stopped listening on port 35071
+1616915223414	Marionette	INFO	Stopped listening on port 41081
+1616915228253	Marionette	INFO	Stopped listening on port 43875
+1616915232703	Marionette	INFO	Stopped listening on port 34001
+JavaScript warning: https://www.bjs.com/staticweb/1f5e6713d54ti207634e0c078ae0ff94a, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.bjs.com/staticweb/1f5e6713d54ti207634e0c078ae0ff94a, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript error: https://www.harristeeter.com/search?query=020685000294 line 3146 > injectedScript, line 1: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript error: https://www.harristeeter.com/search?query=020685000294 line 3146 > injectedScript, line 1: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript warning: https://www.heb.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1659101895, line 1: unreachable code after return statement
+JavaScript warning: https://www.heb.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1659101895, line 1: unreachable code after return statement
+JavaScript warning: https://www.heb.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1659101895 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.heb.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1659101895 line 1 > eval, line 1: unreachable code after return statement
+1616915239267	Marionette	INFO	Stopped listening on port 36073
+WARNING: At least one completion condition is taking too long to complete. Conditions: [{"name":"SessionStore: flushing all windows","state":{"total":1,"current":0},"filename":"resource:///modules/sessionstore/SessionStore.jsm","lineNumber":2140,"stack":["resource:///modules/sessionstore/SessionStore.jsm:ssi_onQuitApplicationGranted:2140","resource:///modules/sessionstore/SessionStore.jsm:ssi_observe:955","chrome://marionette/content/driver.js:GeckoDriver.prototype.quit:2889","chrome://marionette/content/server.js:despatch:295","chrome://marionette/content/server.js:execute:265","chrome://marionette/content/server.js:onPacket/<:238","chrome://marionette/content/server.js:onPacket:239","chrome://marionette/content/transport.js:_onJSONObjectReady/<:504"]}] Barrier: quit-application-granted
+JavaScript error: https://www.harristeeter.com/search?query=020685000294 line 3146 > injectedScript, line 1: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+1616915239704	Marionette	INFO	Stopped listening on port 42771
+JavaScript warning: https://www.heb.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1524127335, line 1: unreachable code after return statement
+JavaScript warning: https://www.heb.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1524127335, line 1: unreachable code after return statement
+JavaScript warning: https://www.heb.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1524127335, line 1: unreachable code after return statement
+JavaScript warning: https://www.heb.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1524127335 line 1 > eval, line 1: unreachable code after return statement
+JavaScript error: https://www.harristeeter.com/search?query=020685000294 line 3146 > injectedScript, line 1: SyntaxError: JSON.parse: unexpected character at line 1 column 1 of the JSON data
+JavaScript warning: https://www.heb.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1524127335 line 1 > eval, line 1: unreachable code after return statement
+JavaScript error: https://maps.googleapis.com/maps/api/js?key=AIzaSyAaGgOT6OAbQaCuOjDHj_w-80s1B91wKsM&libraries=places, line 87: Error: Could not load "geocoder".
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: https://www.astutebot.com/components/Launchers/Messenger/v1.0.0.js, line 547: TypeError: settings.runtime.messenger is null
+JavaScript error: https://www.harristeeter.com/search?query=020685000294 line 3146 > injectedScript, line 4: ReferenceError: angular is not defined
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+JavaScript error: https://www.astutebot.com/components/Launchers/Messenger/v1.0.0.js, line 547: TypeError: settings.runtime.messenger is null
+JavaScript error: https://www.harristeeter.com/search?query=020685000294 line 3146 > injectedScript, line 4: ReferenceError: angular is not defined
+WARNING: At least one completion condition is taking too long to complete. Conditions: [{"name":"SessionStore: flushing all windows","state":{"total":1,"current":0},"filename":"resource:///modules/sessionstore/SessionStore.jsm","lineNumber":2140,"stack":["resource:///modules/sessionstore/SessionStore.jsm:ssi_onQuitApplicationGranted:2140","resource:///modules/sessionstore/SessionStore.jsm:ssi_observe:955","chrome://marionette/content/driver.js:GeckoDriver.prototype.quit:2889","chrome://marionette/content/server.js:despatch:295","chrome://marionette/content/server.js:execute:265","chrome://marionette/content/server.js:onPacket/<:238","chrome://marionette/content/server.js:onPacket:239","chrome://marionette/content/transport.js:_onJSONObjectReady/<:504"]}] Barrier: quit-application-granted
+1616915244608	Marionette	INFO	Stopped listening on port 46737
+1616915244730	Marionette	INFO	Stopped listening on port 38817
+JavaScript error: https://maps.googleapis.com/maps/api/js?key=AIzaSyAaGgOT6OAbQaCuOjDHj_w-80s1B91wKsM&libraries=places, line 87: Error: Could not load "geocoder".
+1616915246764	Marionette	INFO	Stopped listening on port 38755
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript warning: https://www.bjs.com/staticweb/1f5e6713d54ti207634e0c078ae0ff94a, line 1: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://www.bjs.com/staticweb/1f5e6713d54ti207634e0c078ae0ff94a, line 1: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://beacon.riskified.com/?shop=www.bjs.com&sid=e32d2a31-a05f-4d17-88f8-656e47f3ad8b, line 7: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://beacon.riskified.com/?shop=www.bjs.com&sid=e32d2a31-a05f-4d17-88f8-656e47f3ad8b, line 7: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://beacon.riskified.com/?shop=www.bjs.com&sid=e32d2a31-a05f-4d17-88f8-656e47f3ad8b, line 7: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://beacon.riskified.com/?shop=www.bjs.com&sid=e32d2a31-a05f-4d17-88f8-656e47f3ad8b, line 7: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x6D0029,name=PNecko::Msg_RemoveRequestContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x230032,name=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript warning: https://beacon.riskified.com/?shop=www.bjs.com&sid=5d22caf9-6984-4712-bf1c-9aad564b104e, line 7: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://beacon.riskified.com/?shop=www.bjs.com&sid=5d22caf9-6984-4712-bf1c-9aad564b104e, line 7: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://beacon.riskified.com/?shop=www.bjs.com&sid=5d22caf9-6984-4712-bf1c-9aad564b104e, line 7: WebGL warning: <Create>: Can't use WebGL in headless mode (https://bugzil.la/1375585).
+JavaScript warning: https://beacon.riskified.com/?shop=www.bjs.com&sid=5d22caf9-6984-4712-bf1c-9aad564b104e, line 7: Failed to create WebGL context: WebGL creation failed: 
+* Can't use WebGL in headless mode (https://bugzil.la/1375585).
+1616915250719	Marionette	INFO	Stopped listening on port 36715
+1616915250867	Marionette	INFO	Stopped listening on port 44693
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: https://www.googletagmanager.com/gtm.js?id=GTM-PN7ML7L, line 8367: NS_ERROR_NOT_INITIALIZED: 
+JavaScript error: , line 0: uncaught exception: undefined
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3A0143,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x6D0029,name=PNecko::Msg_RemoveRequestContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3A0143,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x6D0016,name=PNecko::Msg_PredLearn) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3A0143,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3A0143,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3A0143,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x6D0016,name=PNecko::Msg_PredLearn) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3A0143,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3A0143,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3C0001,name=PCookieService::Msg_SetCookies) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x5D0009,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3A0143,name=PContent::Msg_ScriptError) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x230032,name=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
